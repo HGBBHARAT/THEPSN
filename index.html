@@ -5,83 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Power Surge - Hydrogen Six-Stroke Engine</title>
     <style>
+        /* General Body and Container Styles - Dark Theme */
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
             margin: 0;
             padding: 0;
-            background-color: #f6f8fa; /* GitHub light background */
-            color: #24292e; /* GitHub dark text */
+            background-color: #0d1117; /* GitHub Dark Background */
+            color: #c9d1d9; /* Light Text */
+            line-height: 1.6;
         }
         .container {
             max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #161b22; /* Slightly Lighter Dark Container */
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
+
+        /* Header Styles */
         header {
             text-align: center;
-            border-bottom: 2px solid #0366d6;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            border-bottom: 3px solid #38a169; /* Accent Green Line */
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
         header h1 {
-            color: #0366d6;
-        }
-        section {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eaecef;
-        }
-        h2 {
-            color: #0366d6;
-            border-bottom: 1px solid #0366d6;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-        h3 {
-            color: #24292e;
-            margin-top: 15px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding-left: 0;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #e36209;
+            color: #38a169; /* Bright Green Accent */
+            font-size: 2.5em;
+            margin-bottom: 5px;
         }
         .author {
             font-style: italic;
-            color: #586069;
-            margin-top: -10px;
-            margin-bottom: 20px;
+            color: #8b949e; /* Muted Grey */
+            margin-top: 0;
+            font-size: 0.95em;
         }
+
+        /* Section and Heading Styles */
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed #30363d;
+        }
+        h2 {
+            color: #58a6ff; /* GitHub Blue for Headings */
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 1.8em;
+            letter-spacing: 0.5px;
+        }
+        h3 {
+            color: #c9d1d9;
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+
+        /* List and Text Styles */
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        
         /* Button Styles */
+        .variant-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
         .variant-buttons button {
-            background-color: #2c974b; /* GitHub Green */
+            background-color: #238636; /* GitHub Success Green */
             color: white;
-            padding: 10px 15px;
+            padding: 10px 20px;
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            font-weight: bold;
-            margin-right: 10px;
-            transition: background-color 0.2s;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
         }
         .variant-buttons button:hover {
-            background-color: #268041;
+            background-color: #2ea043;
+            transform: translateY(-1px);
         }
+        
         /* Engine Info Display */
         .engine-info {
-            border: 1px solid #c8e1ff;
-            background-color: #f1f8ff; /* Light Blue Background */
-            padding: 15px;
-            margin-top: 20px;
+            border: 1px solid #30363d;
+            background-color: #0c1827; /* Darker Blueish Accent */
+            padding: 20px;
+            margin-top: 25px;
             border-radius: 6px;
-            min-height: 50px;
+            min-height: 80px;
+            transition: background-color 0.3s;
+        }
+        .engine-info h3 {
+            color: #38a169;
+            margin-top: 0;
         }
     </style>
 </head>
@@ -89,8 +115,8 @@
 
 <div class="container">
     <header>
-        <h1>🚀 The Power Surge</h1>
-        <p class="author">Neelaksh Saxena, Atharva Johri, Daksh Jain, Bhavesh Sattawan | Bhartiya Vidya Bhavan's Vidyahram Prartap nagar</p>
+        <h1>🚀 THE POWER SURGE</h1>
+        <p class="author">Neelaksh Saxena, Atharva Johri, Daksh Jain, Bhavesh Sattawan</p>
     </header>
 
     <section id="problem">
@@ -108,16 +134,7 @@
 
     <section id="product">
         <h2>🛠️ Our Product: Hydrogen-Powered Six-Stroke CV Engine</h2>
-        <p>Our product is a Hydrogen-powered Six-stroke CV engine designed for maximum efficiency and extremely clean performance.</p>
-
-        <h3>Key Components</h3>
-        <ul>
-            <li>Engine block, Piston, Camshaft</li>
-            <li>Spark plug, Fuel injector, Secondary injector</li>
-            <li>Turbo charger, Air intercooler</li>
-            <li>Exhaust and intake manifolds</li>
-            <li>Linear bearing</li>
-        </ul>
+        <p>Our product is a Hydrogen-powered Six-stroke CV engine designed for maximum efficiency and extremely clean performance. Select a variant below for details:</p>
 
         <h3>Product Variants (H2 Turbo)</h3>
         <div class="variant-buttons">
@@ -133,17 +150,20 @@
 
     <section id="mechanism">
         <h2>⚙️ Mechanism: The Six-Stroke Cycle</h2>
-        <p>A six-stroke hydrogen-powered CV engine operates on an advanced cycle designed to extract maximum efficiency and extremely clean performance from hydrogen fuel.</p>
+        <p>A six-stroke hydrogen-powered CV engine operates on an advanced cycle designed to extract maximum efficiency and extremely clean performance from hydrogen fuel. 
+
+[Image of 6-Stroke Engine Cycle Diagram]
+</p>
         <ol>
             <li>Stroke 1 (Intake): A fresh charge of hydrogen mixed with air enters the cylinder.</li>
             <li>Stroke 2 (Compression): The mixture is compressed as the piston moves upward, preparing it for ignition.</li>
             <li>Stroke 3 (First Power): A spark plug ignites the compressed mixture, creating a powerful combustion event that forces the piston downward.</li>
-            <li>Stroke 4 (Air Injection & Compression): A specially designed port opens, allowing a high-pressure stream of air (compressed earlier by a turbocharger) to enter the cylinder. The piston moves upward, compressing the newly added air and creating ideal conditions for a second power stroke.</li>
+            <li>Stroke 4 (Air Injection & Compression): A high-pressure stream of air enters the cylinder. The piston moves upward, compressing the newly added air, setting up the second power stroke.</li>
             <li>Stroke 5 (Second Power): The spark plug ignites the compressed mixture once more, pushing the piston down with an additional burst of energy that significantly boosts overall efficiency.</li>
-            <li>Stroke 6 (Exhaust): The exhaust gases produced from both combustion cycles are expelled from the cylinder, clearing it for the next cycle.</li>
+            <li>Stroke 6 (Exhaust): The exhaust gases from both combustion cycles are expelled from the cylinder, clearing it for the next cycle.</li>
         </ol>
 
-        <p>Unlike conventional engines where all cylinders connect to a crankshaft, this engine uses a special rod assembly that synchronises the six horizontally placed cylinders. This design reduces mechanical losses, improves balance, and delivers smoother power.</p>
+        <p>This engine uses a special rod assembly that synchronises the six horizontally placed cylinders, delivering smoother power by reducing mechanical losses compared to a conventional crankshaft.</p>
         
         <h3>Emissions</h3>
         <p>Because the engine uses hydrogen, it produces virtually zero carbon emissions. The main by-product is nitrogen oxide (NOx), which can be easily converted into harmless nitrogen by a catalytic converter.</p>
@@ -152,20 +172,20 @@
     <section id="advantages">
         <h2>✅ Advantages and Performance</h2>
         <ul>
-            <li>Higher Fuel Efficiency: Uses less than half the fuel of comparable crankshaft engines.</li>
-            <li>Zero Emissions: Zero emission of harmful gases except nitrogen oxide. Forecasts a greater than 70% reduction in exhaust emission.</li>
-            <li>Improved Power: Up to 58% Increase torque due to rod rack assembly. More power output.</li>
-            <li>Reduced Wear/Maintenance: Less Mechanical Stress. Minimal oil filter and change.</li>
+            <li>Higher Fuel Efficiency: Uses less than half the fuel of comparable engines.</li>
+            <li>Zero Emissions: Zero emission of harmful gases except nitrogen oxide, forecasting a greater than 70% reduction in exhaust emission.</li>
+            <li>Improved Power: Up to 58% Increase in torque due to rod rack assembly, leading to more power output.</li>
+            <li>Reduced Wear/Maintenance: Less mechanical stress, minimal oil filter and change.</li>
             <li>Thermal Efficiency: Improved Thermal Efficiency, Better Cooling, Reduced Engine Temperature.</li>
-            <li>Weight & Construction: Lighter overall due to elimination of heavy crankshaft. Simplified Construction (in some designs). Reduced Noise.</li>
+            <li>Weight & Construction: Lighter overall due to elimination of the heavy crankshaft.</li>
         </ul>
     </section>
 
     <section id="applications">
         <h2>🌍 Applications</h2>
-        <p>The hydrogen six-stroke engine is suitable for a wide range of uses:</p>
+        <p>The hydrogen six-stroke engine is suitable for a wide range of uses, from personal transport to industrial power generation:</p>
         <ul>
-            <li>Automobiles (Cars & Two-Wheelers )</li>
+            <li>Automobiles (Cars & Two-Wheelers)</li>
             <li>Industrial Engines</li>
             <li>Agricultural Machinery</li>
             <li>Power Generation</li>
@@ -176,7 +196,7 @@
     </section>
 
     <footer>
-        <p style="text-align: center; font-size: 0.9em; color: #586069; margin-top: 30px;">Thank You</p>
+        <p style="text-align: center; font-size: 0.9em; color: #8b949e; margin-top: 30px;">Project developed by Neelaksh Saxena, Atharva Johri, Daksh Jain, Bhavesh Sattawan. Thank You.</p>
     </footer>
 </div>
 
@@ -188,30 +208,30 @@
         switch (engineType) {
             case '6.7':
                 info = `
-                    <h3>H2 6.7 L turbo</h3>
+                    <h3>H2 6.7 L turbo - Heavy Duty</h3>
                     <ul>
-                        <li>Application: Heavy duty commercial purpose vehicles like heavy duty truck.</li>
-                        <li>Power Output: Enormous, about 600 HP to 800 HP (more, depending on ECU mapping and turbo size).</li>
+                        <li>Application: Heavy duty commercial purpose vehicles like heavy duty trucks.</li>
+                        <li>Power Output: Enormous, about <span class="highlight">600 HP to 800 HP+</span> (depends on ECU mapping and turbo size).</li>
                         <li>Compression Ratio: 14:1.</li>
                     </ul>
                 `;
                 break;
             case '4.0':
                 info = `
-                    <h3>H2 4.0 L turbo</h3>
+                    <h3>H2 4.0 L turbo - Light Commercial/Performance</h3>
                     <ul>
                         <li>Application: Light trucks, high performance cars and big SUVs.</li>
-                        <li>Power Output: Enormous, about 500 HP to 600 HP (more, depending on ECU mapping and turbo size).</li>
+                        <li>Power Output: Enormous, about <span class="highlight">500 HP to 600 HP+</span> (depends on ECU mapping and turbo size).</li>
                         <li>Compression Ratio: 14:1.</li>
                     </ul>
                 `;
                 break;
             case '2.0':
                 info = `
-                    <h3>H2 2.0 L turbo</h3>
+                    <h3>H2 2.0 L turbo - Standard Use</h3>
                     <ul>
                         <li>Application: Normal production cars, small machinery and tractors.</li>
-                        <li>Power Output: Enormous, about 250 HP to 350 HP (more, depending on ECU mapping and turbo size).</li>
+                        <li>Power Output: Enormous, about <span class="highlight">250 HP to 350 HP+</span> (depends on ECU mapping and turbo size).</li>
                         <li>Compression Ratio: 14:1.</li>
                     </ul>
                 `;
@@ -222,6 +242,16 @@
 
         detailsDiv.innerHTML = info;
     }
+    
+    // Set initial text color for the highlights inside the script-generated content
+    document.addEventListener('DOMContentLoaded', () => {
+        const style = document.createElement('style');
+        style.innerHTML = '.highlight { color: #58a6ff; font-weight: bold; }'; /* Highlight color for dark theme */
+        document.head.appendChild(style);
+        
+        // Load initial info
+        document.getElementById('engineDetails').innerHTML = 'Click a button above to see the specific details for that engine variant.';
+    });
 </script>
 
 </body>
